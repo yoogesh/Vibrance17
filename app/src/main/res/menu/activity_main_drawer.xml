@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sen"
+            android:icon="@drawable/event"
+            android:title="Formal" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/event"
+            android:title="Informal" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/event"
+            android:title="Cultural" />
+        <item
+            android:id="@+id/nav_shar"
+            android:icon="@drawable/event"
+            android:title="Sports" />
+
+
+    </group>
+
+    <item
+
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_proshow"
+                android:icon="@drawable/proshowicon"
+                android:title="Pro Show "
+            />
+            <item
+                android:id="@+id/nav_schedule"
+                android:icon="@drawable/scheduleicon"
+                android:title="Schedule" />
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/maplogo"
+                android:title="Map" />
+
+        </menu>
+    </item>
+    <item
+
+        android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/abouticon"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contacticon"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

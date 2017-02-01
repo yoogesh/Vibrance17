@@ -1,0 +1,161 @@
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#000000"
+    >
+
+
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bckgroundviewflipper1">
+
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/slide1_copy"
+                            android:clickable="true"
+                            android:id="@+id/p2"
+                            android:background="#000000"
+                            android:scaleType="fitXY"/>
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/slide2_copy"
+                            android:clickable="true"
+                            android:id="@+id/p3"
+                            android:background="#000000"
+                            android:scaleType="fitXY"/>
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/slide3_copy"
+                            android:clickable="true"
+                            android:id="@+id/p4"
+                            android:background="#000000"
+                            android:scaleType="fitXY"/>
+
+                    </ViewFlipper>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+android:orientation="vertical">
+
+
+        <TableLayout
+            android:id="@+id/threeByThreeTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2,3"
+            android:padding="10dp"
+        >
+
+
+
+            <TableRow android:id="@+id/tableRow1"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mygallery1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rapidfire"
+
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="match_parent"
+                        android:background="#000000"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/classicdebate"
+
+                        />
+                </LinearLayout>
+
+
+            </TableRow>
+            <TableRow android:id="@+id/tableRow2"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/mygallery2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/sherlock"
+
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="match_parent"
+                        android:background="#000000"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shipwreck"
+
+
+                        />
+                </LinearLayout>
+
+            </TableRow>
+           </TableLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
+    </LinearLayout>

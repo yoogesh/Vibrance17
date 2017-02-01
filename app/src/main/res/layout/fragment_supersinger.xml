@@ -1,0 +1,371 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:id="@+id/threeByThreeTble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3,4,5,6,7"
+        android:padding="10dp"
+    >
+        <TableRow android:id="@+id/tableRw1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+            <LinearLayout
+                android:id="@+id/mygalley1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.85"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/supersinger"
+
+                />
+
+            </LinearLayout>
+
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/regicon"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="0n-Spot Registration"
+                    android:fontFamily="monospace"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.27"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/timeicon"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:text="9-10AM |17th,march17"
+                    android:fontFamily="monospace"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/abouticon"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Group Event"
+                    android:fontFamily="monospace"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+
+        <TableRow android:id="@+id/tableRow5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/venueicon"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Academic block"
+                    android:fontFamily="monospace"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow10"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.88"
+                    android:layout_height="250dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/vvv"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/tableRow6"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.9"
+                    android:fontFamily="serif-monospace"
+                    android:text="You don't have the burden of a team mate in this format. It's just you against another human soul debating on a topic given prior to the debate. One on One, this debate is all about you."
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow8"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.27"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/contacticon"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:text="Amulya Indrakush 9962407059"
+                    android:fontFamily="monospace"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                />
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+</ScrollView>
