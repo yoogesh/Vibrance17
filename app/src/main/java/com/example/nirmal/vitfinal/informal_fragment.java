@@ -29,13 +29,6 @@ public class informal_fragment extends Fragment {
         but3 = (Button)subView.findViewById(R.id.button3);
         but4 = (Button)subView.findViewById(R.id.button4);
         but5 = (Button)subView.findViewById(R.id.button5);
-        but6 = (Button)subView.findViewById(R.id.button6);
-        but8 = (Button)subView.findViewById(R.id.button8);
-        but9 = (Button)subView.findViewById(R.id.button9);
-        but10 = (Button)subView.findViewById(R.id.button10);
-        but11 = (Button)subView.findViewById(R.id.button11);
-        but12 = (Button)subView.findViewById(R.id.button12);
-        but13 = (Button)subView.findViewById(R.id.button13);
 
 
 
@@ -90,69 +83,6 @@ public class informal_fragment extends Fragment {
             }
         });
 
-        but6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new BeachFeast()).commit();
-            }
-        });
-        but8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new SellingCrap()).commit();
-            }
-        });
-        but9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new reel()).commit();
-            }
-        });
-        but10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Shipwreck()).commit();
-            }
-        });
-        but11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Sports()).commit();
-            }
-        });
-        but12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Tv()).commit();
-            }
-        });
-        but13.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Scrabble()).commit();
-            }
-        });
 
 
 

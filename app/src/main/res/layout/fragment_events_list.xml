@@ -1,0 +1,278 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:id="@+id/threeByThreeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3"
+        android:padding="10dp"
+    >
+
+        <TableRow android:id="@+id/tableRow1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+            <LinearLayout
+                android:id="@+id/mygallery1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/arts"
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                   android:background="@drawable/dance"
+
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drama"
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tamil"
+
+
+                />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sports"
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/quizz"
+
+                />
+            </LinearLayout>
+
+
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow7"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fashion"
+
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/music"
+
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow8"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/nen"
+
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/debsoc"
+
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/tableRow4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/viteach"
+
+
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/litsoc"
+
+                />
+            </LinearLayout>
+
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -15,9 +15,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
     FragmentManager fm ;
     FragmentTransaction ft;
     @Override
@@ -26,14 +27,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -45,6 +39,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         main_fragment myFragment = new main_fragment();
         fm = getFragmentManager();
+
         ft = fm.beginTransaction();
         ft.replace(R.id.content_main,myFragment).commit();
     }
@@ -88,23 +83,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentTransaction ft2 = fm.beginTransaction();
         switch (id){
-            case R.id.nav_sen:
-                formal_fragment myFrag = new formal_fragment();
+            case R.id.nav_eve:
+                Events_list myFrag = new Events_list();
                 ft2.replace(R.id.content_main,myFrag).commit();
                 break;
-            case R.id.nav_send:
-                culturals_fragment myFrag2 = new culturals_fragment();
-                ft2.replace(R.id.content_main,myFrag2).commit();
-                break;
-            case R.id.nav_shar:
-                sports_fragment myFrag4 = new sports_fragment();
-                ft2.replace(R.id.content_main,myFrag4).commit();
+            case R.id.nav_sche:
+                android.support.v4.app.FragmentTransaction ft4=fmm.beginTransaction();
+                Tabmain myFragg3 = new Tabmain();
+                ft4.replace(R.id.content_main,myFragg3).commit();
                 break;
 
-            case R.id.nav_share:
-                informal_fragment myFrag3 = new informal_fragment();
-                ft2.replace(R.id.content_main,myFrag3).commit();
-                break;
+
             case R.id.nav_map:
                 mapp myFragg = new mapp();
                 ft2.replace(R.id.content_main,myFragg).commit();
@@ -115,11 +104,10 @@ public class MainActivity extends AppCompatActivity
                 ft2.replace(R.id.content_main,myFrag1).commit();
                 break;
 
-            case R.id.nav_schedule:
-                Schedule myFragg3 = new Schedule();
-                ft2.replace(R.id.content_main,myFragg3).commit();
-                break;
-            case R.id.nav_about:
+
+
+
+              case R.id.nav_about:
                 Aboutus myFragg4 = new Aboutus();
                 ft2.replace(R.id.content_main,myFragg4).commit();
                 break;

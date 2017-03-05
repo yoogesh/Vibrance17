@@ -69,11 +69,15 @@ public class mapp extends Fragment implements OnMapReadyCallback {
         MapsInitializer.initialize(getActivity());
 
         gmap=googleMap;
-        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         googleMap.addMarker(new MarkerOptions().position(new LatLng(12.8426 , 80.1529)).title("Vit Chennai").snippet("Welcome to vibrance 2017"));
-        CameraPosition mypo=CameraPosition.builder().target(new LatLng(12.8426 , 80.1529)).zoom(16).bearing(0).tilt(45).build();
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(12.8434 , 80.1535)).title("Vit Chennai").snippet("Academic block"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(12.8432 , 80.1566)).title("Vit Chennai").snippet("Academic block II "));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(12.8426 , 80.1570)).title("Vit Chennai").snippet("Hostel B block  "));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(12.8431 , 80.1579)).title("Vit Chennai").snippet("Hostel C block  "));
 
 
+        CameraPosition mypo=CameraPosition.builder().target(new LatLng(12.8426 , 80.1549)).zoom(16).bearing(0).tilt(0).build();
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(mypo));
     }
 

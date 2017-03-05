@@ -117,7 +117,7 @@
                     <Button
                         android:id="@+id/button5"
                         android:layout_width="0dp"
-                        android:layout_weight="1.4"
+                        android:layout_weight="1.3"
                         android:layout_height="250dp"
                         android:layout_gravity="center"
                         android:background="@drawable/rang"
@@ -125,149 +125,16 @@
                         />
                     <View
                         android:layout_width="0dp"
-                        android:layout_weight="0.1"
+                        android:layout_weight="1.5"
                         android:layout_height="match_parent"
                         android:background="#000000"/>
 
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/beach"
 
-                        />
                 </LinearLayout>
 
 
         </TableRow>
-        <TableRow android:id="@+id/tableRow4"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginBottom="10dp"
-            >
 
-                <LinearLayout
-                    android:id="@+id/mygallery4"
-                    android:layout_width="wrap_content"
-                    android:weightSum="3"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
-                    <Button
-                        android:id="@+id/button8"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/crap"
-
-
-                        />
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_weight="0.1"
-                        android:layout_height="match_parent"
-                        android:background="#000000"/>
-
-                    <Button
-                        android:id="@+id/button9"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/reel"
-
-                        />
-                </LinearLayout>
-
-
-
-        </TableRow>
-        <TableRow android:id="@+id/tableRow5"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginBottom="10dp"
-            >
-
-                <LinearLayout
-                    android:id="@+id/mygallery5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:weightSum="3"
-                    android:orientation="horizontal"
-                    >
-                    <Button
-                        android:id="@+id/button10"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/shipwreck"
-
-
-                        />
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_weight="0.1"
-                        android:layout_height="match_parent"
-                        android:background="#000000"/>
-
-                    <Button
-                        android:id="@+id/button11"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/spq"
-
-                        />
-                </LinearLayout>
-
-        </TableRow>
-        <TableRow android:id="@+id/tableRow6"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginBottom="10dp"
-            >
-
-                <LinearLayout
-                    android:id="@+id/mygallery6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:weightSum="3"
-                    android:orientation="horizontal"
-                    >
-                    <Button
-                        android:id="@+id/button12"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/tv"
-
-
-                        />
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_weight="0.1"
-                        android:layout_height="match_parent"
-                        android:background="#000000"/>
-
-                    <Button
-                        android:id="@+id/button13"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.4"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/scra"
-
-                        />
-                </LinearLayout>
-
-
-        </TableRow>
     </TableLayout>
 
 </ScrollView>

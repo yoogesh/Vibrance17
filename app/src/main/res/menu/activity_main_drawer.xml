@@ -4,21 +4,14 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_sen"
+            android:id="@+id/nav_eve"
             android:icon="@drawable/event"
-            android:title="Formal" />
+            android:title="Events" />
         <item
-            android:id="@+id/nav_share"
+            android:id="@+id/nav_sche"
             android:icon="@drawable/event"
-            android:title="Informal" />
-        <item
-            android:id="@+id/nav_send"
-            android:icon="@drawable/event"
-            android:title="Cultural" />
-        <item
-            android:id="@+id/nav_shar"
-            android:icon="@drawable/event"
-            android:title="Sports" />
+            android:title="Schedule" />
+
 
 
     </group>
@@ -32,10 +25,7 @@
                 android:icon="@drawable/proshowicon"
                 android:title="Pro Show "
             />
-            <item
-                android:id="@+id/nav_schedule"
-                android:icon="@drawable/scheduleicon"
-                android:title="Schedule" />
+
             <item
                 android:id="@+id/nav_map"
                 android:icon="@drawable/maplogo"

@@ -27,7 +27,7 @@
                 android:weightSum="3"
                 android:orientation="horizontal"
             >
-                <Button
+                <ImageView
                     android:id="@+id/button1"
                     android:layout_width="0dp"
                     android:layout_weight="2.85"
@@ -62,18 +62,14 @@
                 android:paddingRight="10dp"
                 android:orientation="horizontal"
             >
-                <Button
+                <ImageView
                     android:id="@+id/button3"
                     android:layout_width="0dp"
                     android:layout_weight="0.3"
                     android:layout_height="30dp"
                     android:layout_gravity="left"
                     android:background="@drawable/regicon"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:textColor="#ff8000"
-                    android:fontFamily="serif-monospace"
-                    android:textAlignment="center"
+
                 />
                 <View
                     android:layout_width="0dp"
@@ -85,10 +81,10 @@
     android:layout_height="wrap_content"
     android:layout_weight="2.2"
     android:text="0n-Spot Registration"
-    android:fontFamily="monospace"
+
     android:textColor="#ffffff"
-    android:textSize="20dp"
-    android:textStyle="bold"
+    android:textSize="25dp"
+
 />
             </LinearLayout>
 
@@ -299,11 +295,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.9"
-android:fontFamily="serif-monospace"
+
                     android:text="A pure and conventional form of debating where the spontaneity and argumentation skills of the participants are tested. 2 teams of three competing against each other within the limited time period to put forth arguments and rebut the opposition."
                     android:textColor="#ffffff"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+
 
                 />
             </LinearLayout>
@@ -359,6 +355,50 @@ android:fontFamily="serif-monospace"
             </LinearLayout>
 
         </TableRow>
+        <TableRow android:id="@+id/tableRow9"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+
+        >
+
+
+            <LinearLayout
+                android:id="@+id/mygallery9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+            >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/register_button"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff8000"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+            </LinearLayout>
+
+        </TableRow>
 
 
 
@@ -368,5 +408,6 @@ android:fontFamily="serif-monospace"
 
 
     </TableLayout>
+
 
 </ScrollView>

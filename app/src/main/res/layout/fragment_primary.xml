@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TableLayout
+        android:id="@+id/threeByThreeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3"
+    >
+        <TableRow android:id="@+id/tableRowt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="8AM - 9AM"
+                      android:textSize="35dp"
+                      android:textColor="#de8930"/>
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/shipwreck"
+
+                        android:id="@+id/image_cardview"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Rapid round which eventually tests your talents !"
+                        android:textSize="20dp"
+
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view4"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/rapidfire"
+
+                        android:id="@+id/image_cardview4"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text4"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Lets see your team skils !!"
+                        android:textSize="20dp"
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow5"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view5"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/adzap"
+
+                        android:id="@+id/image_cardview5"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text5"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Show the best demo what you have "
+                        android:textSize="20dp"
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow6"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="9AM - 10AM"
+                      android:textSize="35dp"
+                      android:textColor="#de8930"/>
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRow7"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view6"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/solo"
+
+                        android:id="@+id/image_cardview6"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.12"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text6"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Time to unleash the beast within "
+                        android:textSize="20dp"
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view2"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/turncoat"
+
+                        android:id="@+id/image_cardview2"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text2"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Lets see your team skils !!"
+                        android:textSize="20dp"
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view3"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#161616"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/classicdebate"
+
+                        android:id="@+id/image_cardview3"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:background="#161616"/>
+
+
+                    <TextView
+                        android:id = "@+id/cardview_text3"
+                        android:fontFamily="monospace"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Its completely you vs another person"
+                        android:textSize="20dp"
+                        android:textColor="#e1712c"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+
+
+
+
+
+
+    </TableLayout>
+
+</ScrollView>
+
+
+
+
+

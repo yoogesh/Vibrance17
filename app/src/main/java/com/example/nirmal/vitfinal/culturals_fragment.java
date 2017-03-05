@@ -24,10 +24,7 @@ public class culturals_fragment extends Fragment {
         but1 = (Button)subview.findViewById(R.id.button1);
         but3 = (Button)subview.findViewById(R.id.button3);
         but4 = (Button)subview.findViewById(R.id.button4);
-        but5 = (Button)subview.findViewById(R.id.button5);
-        but6 = (Button)subview.findViewById(R.id.button6);
-        but8 = (Button)subview.findViewById(R.id.button8);
-        but9 = (Button)subview.findViewById(R.id.button9);
+
 
 
         but1.setOnClickListener(new View.OnClickListener() {
@@ -70,44 +67,6 @@ public class culturals_fragment extends Fragment {
             }
         });
 
-
-        but5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Bobe()).commit();
-            }
-        });
-
-        but6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new bobw()).commit();
-            }
-        });
-        but8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Talenthunt()).commit();
-            }
-        });
-        but9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                FragmentManager fm = getActivity().getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.content_main, new Supersinger()).commit();
-            }
-        });
 
 
 
