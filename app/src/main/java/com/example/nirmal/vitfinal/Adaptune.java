@@ -45,6 +45,7 @@ Button b1;
 
             }
         });
+        ((MainActivity)getActivity()).setActionBarTitle("Adaptune");
         return m;
     }
 

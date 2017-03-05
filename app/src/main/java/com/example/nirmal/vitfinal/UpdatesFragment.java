@@ -23,6 +23,7 @@ public class UpdatesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        ((MainActivity)getActivity()).setActionBarTitle("Schedule");
         return inflater.inflate(R.layout.fragment_updates, container, false);
     }
 

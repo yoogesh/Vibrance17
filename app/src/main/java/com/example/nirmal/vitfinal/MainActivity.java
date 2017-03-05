@@ -14,18 +14,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.Toast;
+import android.app.Fragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
+    android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
+    Toolbar toolbar;
     FragmentManager fm ;
     FragmentTransaction ft;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
@@ -42,16 +45,34 @@ android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
 
         ft = fm.beginTransaction();
         ft.replace(R.id.content_main,myFragment).commit();
-    }
 
+    }
+    public void setActionBarTitle(String title){
+        toolbar.setTitle(title);
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        } /*else {
             super.onBackPressed();
+        }*/
+        FragmentManager fm = getFragmentManager();
+        Fragment frag = fm.findFragmentById(R.id.content_main);
+        if(frag instanceof football){
+            Toast.makeText(getApplicationContext(),"Pressed from Football",Toast.LENGTH_SHORT).show();
+           // ft.replace(R.id.content_main,new Events_list()).commit();
+            //If this code works repeat this for all the fragment names with the if statement
+            // Eg : if(frag instanceof Musicclub)
+            //           go to events page
+            //else copy paste the below code..That will take you to the main page
         }
+        //Takes you to the main page so copy paste this whenever needed
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.content_main,new main_fragment()).commit();
+        (MainActivity.this).setActionBarTitle("Adaptune");
+       // Toast.makeText(getApplicationContext(),"Back is pressed", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -107,7 +128,7 @@ android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
 
 
 
-              case R.id.nav_about:
+            case R.id.nav_about:
                 Aboutus myFragg4 = new Aboutus();
                 ft2.replace(R.id.content_main,myFragg4).commit();
                 break;
@@ -119,22 +140,10 @@ android.support.v4.app.FragmentManager fmm=getSupportFragmentManager();
 
 
         }
-        /*if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+ }

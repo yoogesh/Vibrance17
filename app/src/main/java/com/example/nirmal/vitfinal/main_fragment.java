@@ -190,8 +190,9 @@ int mf=0;
 
             }
         });
-
+        ((MainActivity)getActivity()).setActionBarTitle("RapidFire");
         return subView;
 
     }
+
 }
