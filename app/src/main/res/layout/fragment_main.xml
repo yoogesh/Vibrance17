@@ -35,6 +35,15 @@ android:orientation="vertical">
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:src="@drawable/slide2_copy"
+            android:clickable="true"
+            android:id="@+id/p7"
+            android:background="#000000"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:src="@drawable/slide3_copy"
             android:clickable="true"
             android:id="@+id/p4"
