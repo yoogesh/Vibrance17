@@ -25,6 +25,11 @@
                       android:text="8AM - 9AM"
                       android:textSize="35dp"
                       android:textColor="#de8930"/>
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8AM - 9AM"
+            android:textSize="35dp"
+            android:textColor="#de8930"/>
 
         </TableRow>
         <TableRow android:id="@+id/tableRow1"
